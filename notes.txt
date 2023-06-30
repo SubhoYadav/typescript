@@ -1,1 +1,7 @@
 Learning typescript
+
+install the typescript compiler globally
+npm i typescript -g
+
+npx tsc first.ts -w - watches the first.ts file for changes
+npx tsc --init: Generates the config file of your typescript project
