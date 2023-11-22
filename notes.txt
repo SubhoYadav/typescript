@@ -1,1 +1,36 @@
 Learning typescript
+
+Install typescript globally: 
+npm i typescript -g
+
+Command to compile the typescript into javascript
+tsc main.ts
+tsc main.ts -w : watches for changes in the file specified and recompiles, when anything changes in the ts file the compiler is watching .
+
+Generate the config file for typescript
+tsc --init
+
+Important configs for typescript:
+
+"outDir": "./build/js",                                   
+/* Specify an output folder for all emitted files. */
+
+"rootDir": "./src",                                  
+/* Specify the root folder within your source files. */
+
+
+"include": [
+    "src"
+] 
+This thing will tell the tsc not to compile ts files outside the src directory
+
+"noEmitOnError": true,                            
+/* Disable emitting files if any type checking errors are reported. */
+
+The following command uses the config noEmitOnError in while launching the tsc command
+tsc --noEmitOnError -w
+
+static or dynamically typed languages are not synonimous to strongly or loosely typed languages, a strongly typed language may be statically typed or dynamically typed
+
+Typescript is a statically typed programming language, meaning the types are checked at compile time
+
