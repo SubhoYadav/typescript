@@ -58,6 +58,19 @@ logMsg("Subho Yadav");
 const createError = (message: string): never => {
   throw new Error(message);
 };
+// never is also used when nothing is left in the union for exampl3
+
+const  printType =  (x: string | number): (string | number | never) => {
+  if (typeof x === "string") {
+    return "string"
+  }
+  else if (typeof x === "number") {
+    return 100
+  }
+  else {
+    throw new Error("Cannot deduce the type")
+  }
+} 
 
 //  the never type arises when the function contains an infinite loop so take it as a warning
 

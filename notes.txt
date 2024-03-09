@@ -4,6 +4,8 @@ Install typescript globally:
 npm i typescript -g
 
 Command to compile the typescript into javascript
+typescript is just a dev tool that gives u static checking
+
 tsc main.ts
 tsc main.ts -w : watches for changes in the file specified and recompiles, when anything changes in the ts file the compiler is watching .
 
