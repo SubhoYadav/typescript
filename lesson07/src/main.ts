@@ -109,3 +109,5 @@ const monthlyIncome: Incomes = {
 for (let key in monthlyIncome) {
   console.log(`${key}: ${monthlyIncome[key as keyof Incomes]}`)
 }
+
+
