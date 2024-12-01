@@ -1,0 +1,18 @@
+npm i typescript -g
+tsc main.ts
+tsc main.ts -w
+tsc --init
+tsc -w
+tsc --noEmitOnError -w
+
+strongly typed languages and loosly typed languages are not the same as
+statically tped and dynamically typed languages, so, a strongly typed language can be 
+typed statically or dynamically.
+
+static typed languages are those where the types are checked at compile time(e.g. Typescript) whereas dynamic type languages are
+those where the types are checked at runtime(e.g. Javascript).
+
+Benifits of typescript:
+Self documenting code
+helps to catch buhs in dev
+great for large collaborating teams
